@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: #0C090D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.hero h1{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: -50px;
+    margin-bottom: 50px;
+   
+}
+
+.hero h1 span{
+    color: #FF9505;
+}
+textarea{
+    width: 500px;
+    height: 200px;
+    background: transparent;
+    padding: 20px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+textarea::placeholder{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    gap: 20px;
+   
+}
+
+.row button{
+    padding: 10px 20px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.row button:hover{
+    background: #FF9505;
+    border: 1px solid #FF9505;
+}
+
+.row button img{
+    width: 16px;
+    margin-right: 10px;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background: #FF9505;
+    width: 40px;
+    height: 40px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    appearance:none;
+    background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
