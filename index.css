@@ -5,21 +5,32 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-.hero{
+.main-hero{
     width: 100%;
     min-height: 100vh;
     background: #0C090D;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    /* border: 1px solid #fff; */
+
+}
+.hero{
+    width: 50%;
+    /* min-height: 100vh; */
+    background: #0C090D;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     color: #fff;
+    /* border: 1px solid #fff; */
 }
 
 .hero h1{
-    font-size: 45px;
+    font-size: 3rem;
     font-weight: 600;
-    margin-top: -50px;
     margin-bottom: 50px;
    
 }
@@ -28,12 +39,12 @@
     color: #FF9505;
 }
 textarea{
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    min-height: 40vh;
     background: transparent;
     padding: 20px;
     font-size: 15px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     outline: none;
     color: #fff;
     border-radius: 10px;
@@ -49,10 +60,8 @@ textarea::placeholder{
 
 .row{
     display: flex;
-    align-items: center;
-    width: 500px;
-    gap: 20px;
-   
+    align-items: flex-start;
+    justify-content: flex-start;   
 }
 
 .row button{
@@ -79,21 +88,23 @@ textarea::placeholder{
     width: 16px;
     margin-right: 10px;
 }
-select{
-    flex: 1;
-    color: #fff;
-    background: #FF9505;
-    width: 40px;
-    height: 40px;
-    padding: 0 20px;
-    outline: 0;
-    border: 0;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    appearance:none;
-    background-image: url(images/dropdown.png);
-    background-repeat: no-repeat;
-    background-size: 15px;
-    background-position-x: calc(100% - 10px);
-    background-position-y: center;
+@media (max-width: 900px) {
+    .hero{
+        width: 100%;
+        padding: 1rem;
+    }
+    .hero h1{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+       
+    }
+}
+@media (max-width: 600px) {
+    .hero h1{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+       
+    }
 }
